@@ -21,7 +21,7 @@ update : Request -> b -> ( b, Cmd msg )
 update req model =
     case Debug.log "req:" req of
         EchoReq str ->
-            ( model, sendWS (EchoRes ("You sent us: '" ++ str ++ "' ; the reverse is " ++ (String.reverse str))) )
+            ( model, sendWS (EchoRes ("You sent us: '" ++ str ++ "' ; the reverse is '" ++ (String.reverse str) ++ "'")) )
 
         Unknown str ->
             ( model, sendWS (Error str) )
