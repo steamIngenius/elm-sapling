@@ -1,0 +1,24 @@
+{
+  "name": "elm-sapling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.18.6",
+    "express": "^4.14.0",
+    "gulp-elm": "^0.6.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-util": "^3.0.7",
+    "ws": "^1.1.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "start": "gulp",
+    "postinstall": "elm-package install -y"
+  },
+  "author": "",
+  "license": "MIT"
+}
